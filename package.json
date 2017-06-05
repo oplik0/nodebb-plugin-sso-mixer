@@ -1,0 +1,41 @@
+{
+  "name": "nodebb-plugin-sso-mixer",
+  "version": "1.0.0",
+  "description": "NodeBB Mixer.com Login",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfw/nodebb-plugin-sso-mixer.git"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "mixer",
+    "mixer.com",
+    "sso",
+    "single sign on",
+    "registration"
+  ],
+  "author": {
+    "name": "Alf W.",
+    "email": "alf@alfw.tv"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfw/nodebb-plugin-sso-mixer/issues"
+  },
+  "dependencies": {
+    "passport-mixer": "^1.0.1"
+  },
+  "nbbpm": {
+    "compatibility": "^0.8.0 || ^0.9.0 || ^1.5.0"
+  },
+  "homepage": "https://github.com/alfw/nodebb-plugin-sso-mixer#readme",
+  "scripts": {},
+  "maintainers": [
+    {
+      "name": "Alf W.",
+      "email": "alf@alfw.tv"
+    }
+  ]
+}
