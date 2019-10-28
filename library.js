@@ -1,15 +1,15 @@
 (function (module) {
 	"use strict";
 
-	var User = module.parent.require('./user'),
-		meta = module.parent.require('./meta'),
-		db = module.parent.require('../src/database'),
-		passport = module.parent.require('passport'),
+	var User = require.main.require('./src/user'),
+		meta = require.main.require('./src/meta'),
+		db = require.main.require('./src/database'),
+		passport = require('passport'),
 		passportMixer = require('passport-mixer').OAuth2Strategy,
-		fs = module.parent.require('fs'),
-		path = module.parent.require('path'),
-		nconf = module.parent.require('nconf'),
-		async = module.parent.require('async');
+		fs = require('fs'),
+		path = require('path'),
+		nconf = require('nconf'),
+		async = require('async');
 
 	var constants = Object.freeze({
 		'name': "Mixer.com",
