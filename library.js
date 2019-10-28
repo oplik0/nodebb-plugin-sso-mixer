@@ -1,10 +1,10 @@
 (function (module) {
 	"use strict";
 
-	var User = module.parent.require('./user'),
-		meta = module.parent.require('./meta'),
+	var User = require.main.require("./src/user'),
+		meta = require.main.require("./src/meta'),
 		db = module.parent.require('../src/database'),
-		passport = module.parent.require('passport'),
+		passport = require.main.require("./src/passport'),
 		passportMixer = require('passport-mixer').OAuth2Strategy,
 		fs = module.parent.require('fs'),
 		path = module.parent.require('path'),
